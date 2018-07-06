@@ -42,13 +42,15 @@ public class BitBlockGame implements IBlockGame {
                 if (blockCount > maxFloor) {
                     maxFloor = blockCount;
                 }
-                int top = (int) (Math.pow(2, blockCount) - 1);
-                bits[count++] = top;
+                int bit = (int) (Math.pow(2, blockCount) - 1);
+                bits[count++] = bit;
             }
         }
 
         for (int i = minFloor; i < maxFloor; i++) {
+            for (int j = 0; j < count; j++) {
 
+            }
         }
 
         for (int bit : bits) {
